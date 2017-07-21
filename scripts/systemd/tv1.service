@@ -1,0 +1,14 @@
+[Unit]
+Description=Meta-Tv tv1
+After=sys-subsystem-net-devices-net0.device
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/tv/.Xauthority
+User=tv
+ExecStart=/home/tv/scripts/tv.sh 1
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=custom.target
