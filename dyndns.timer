@@ -1,0 +1,10 @@
+[Unit]
+Description=Run cloudflare dynamic dns every 10mins
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=10min
+Unit=dyndns.service
+
+[Install]
+WantedBy=multi-user.target

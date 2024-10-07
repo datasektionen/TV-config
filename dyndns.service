@@ -1,0 +1,12 @@
+[Unit]
+Description=META-TV dynamic dns
+After=network.target
+
+[Service]
+EnvironmentFile=/home/tv/TV-config/.env
+User=tv
+ExecStart=/home/tv/TV-config/dyndns.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target

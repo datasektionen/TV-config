@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=META-TV Stuff
+Exec=/home/tv/TV-config/start-browsers.sh
+Categories=Utility;Application;META
